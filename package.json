@@ -19,6 +19,6 @@
   "homepage": "https://github.com/niedan123/grunt-demo#readme",
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-contrib-less": "^2.0.0"
+    "grunt-eslint": "^22.0.0"
   }
 }
