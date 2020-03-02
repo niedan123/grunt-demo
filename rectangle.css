@@ -1,19 +1,16 @@
-.main {
-  font-size: 1.1em;
-  margin: 50 auto;
+body{
   width:370px;
+  margin : 50px auto;
+  font-size:1.1em;
 
 }
-
-input, label {
-  font-size: 1em;
-  margin: 5px 0;
-  padding-left: 5px;
+#calculate{
+  width:70px;
+  margin-left:62px;
 }
 
-#calculate {
-  margin-left: 62px;
-  width: 70px;
+input,label{
+  margin:5px 0;
+  padding-left:5px;
+  font-size:1em;
 }
-
-

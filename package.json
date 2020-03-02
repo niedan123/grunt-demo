@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/niedan123/grunt-demo#readme",
   "devDependencies": {
-    "grunt": "^1.0.4",
-    "grunt-eslint": "^22.0.0"
+    "chai": "^4.2.0",
+    "grunt": "^0.4.5",
+    "grunt-mocha": "^1.2.0",
+    "mocha": "^7.1.0"
   }
 }
