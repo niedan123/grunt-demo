@@ -1,21 +1,18 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-    run: {
-      api: {
-        options: {wait: false},
-        args: ['./app.js']
-      }
-    },
-    mochacli: {
-      all: ['test/*.js'],
+    htmlmin: {
       options: {
-        reporter: 'spec',
-        bail: true
+        collapseWhitespace: true,
+        preserveLineBreaks: false
+      },
+      files: {
+        src: './index.html',
+        dest: 'dist/index.html'
       }
     }
   });
-  grunt.loadNpmTasks('grunt-mocha-cli');
-  grunt.loadNpmTasks('grunt-run');
 
-  grunt.registerTask('default', ['run','mochacli','stop:api']);
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+
+  grunt.registerTask('default', ['htmlmin']); 
 };
